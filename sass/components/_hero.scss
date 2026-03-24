@@ -1,0 +1,109 @@
+.hero {
+ padding-bottom: 24px;
+ padding-top: 20px;
+
+&__container {
+display: flex;
+justify-content: space-between;
+}
+&__logo {
+}
+&__link__logo {
+    color: #6b4a57;
+       font-family: "Playfair Display", sans-serif;
+       font-size: 35px;
+       font-weight: 700;
+}
+&__icon {
+   
+  stroke: #6b4a57;
+  stroke-width: 16;
+  fill: none; 
+  width: 24px;
+  height: 24px;
+}
+&__list {
+    display: flex;
+    gap: 30px;
+}
+&__item {
+    
+
+}
+&__button {
+
+}
+&__icons {
+}
+}
+
+
+
+.search {
+    &__container {
+        width: 700px;
+        
+    }
+    
+    &__input {
+        width: 100%;
+        padding: 12px 24px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color:  #6b6a6a;
+        background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+ 
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23030303' d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid  #cecccc;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        
+        &::placeholder {
+           
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        &:hover,
+        &:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #cecccc;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+    }
+}
+
+/* ===== Overlay ===== */
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;               /* начальное состояние */
+  pointer-events: none;     /* чтобы не мешал кликам, когда закрыт */
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.overlay.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+

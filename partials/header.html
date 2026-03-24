@@ -1,0 +1,89 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="language-widget">
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="uk">UK</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+
+    <nav class="header__nav">
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="nav-links">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Клієнтам</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li class="sub-menu__item">
+                  <a class="header__link" href="#">Доставка</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="header__link" href="#">Оплата</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="header__link" href="#">Повернення та обмін</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item"><a href="#">Про нас</a></li>
+            <li class="header__item"><a href="#">Блог</a></li>
+            <li class="header__item"><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <ul class="header__connects">
+    <li class="header__connect">
+        <a href="" class="header__connect__link">
+            <svg class="header__icon">
+                <use></use>
+            </svg>
+            Telegram
+        </a>
+    </li>
+    <li class="header__connect">
+        <a href="" class="header__connect__link">
+            <svg class="header__icon">
+                <use></use>
+            </svg>
+             kohanibtq@gmail.com
+        </a>
+    </li>
+    <li class="header__connect">
+        <a href="" class="header__connect__link">
+            <svg class="header__icon">
+                <use></use>
+            </svg>
+             099-100-00-88
+        </a>
+    </li>
+   </ul>
+
+    <button id="openModal" class="callback-button" aria-label="Передзвонити вам">Передзвонити</button>
+
+    <div class="overlay" id="modalOverlay">
+  <div class="modal">
+    
+    <button class="modal__close" type="button">×</button>
+    <h2 class="modal__title">Передзвонити вам?</h2>
+    <p class="modal__text">Вкажіть ваш номер телефону та ім'я. Ми зателефонуємо вам найближчим часом.</p>
+    <form class="modal__form">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__label" for="name">Ім'я</label>
+          <input class="modal__input" type="text" id="name" placeholder="Ваше ім'я">
+        </li>
+        <li class="modal__item">
+          <label class="modal__label" for="phone">Телефон</label>
+          <input class="modal__input" type="tel" id="phone" placeholder="+380">
+        </li>
+      </ul>
+      <button class="modal__button" type="submit">Надіслати</button>
+    </form>
+  </div>
+</div>
+  </div>
+</header>
